@@ -130,10 +130,8 @@
   (global-set-key (kbd "C-x m") 'eshell)
   (global-set-key (kbd "C-c d") 'crux-duplicate-current-line-or-region)
   (global-set-key [(shift return)] 'crux-smart-open-line)
-  (global-set-key (kbd "M-o") 'crux-smart-open-line)
   (global-set-key [(control shift return)] 'crux-smart-open-line-above)
-  (global-set-key [(control shift up)]  'move-text-up)
-  (global-set-key [(control shift down)]  'move-text-down))
+  (global-set-key (kbd "M-o") 'crux-smart-open-line))
 
 (after! consult (global-set-key (kbd "C-c ! !") 'consult-flycheck))
 
